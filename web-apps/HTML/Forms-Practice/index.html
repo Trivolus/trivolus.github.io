@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Forms Practice</title>
+</head>
+
+<body>
+    <form>
+        <p>What is your account username?</p>
+        <label for="username">Username</label>
+        <input type="text" name="username">
+
+        <br><br>
+        <textarea name="concern" placeholder="Tell us what problem you are experiencing..."></textarea>
+
+        <br><br><br>
+
+        <fieldset>
+            <legend>Background information</legend>
+
+        <p>What is your employment status?</p>
+        <input checked type="radio" name="employment" value="Full-Time">Full Time
+        <input type="radio" name="employment" value="Part-Time"> Part-Time
+        <input type="radio" name="employment" value="Temporary"> Temporary
+        <input type="radio" name="employment" value="Student"> Student
+
+        <br><br><br>
+
+        <p>When did you start at this employer?</p>
+        <input type="checkbox" name="months-employed" value="January"> January
+        <input checked type="checkbox" name="months-employed" value="February"> February
+        <input type="checkbox" name="months-employed" value="March">March  
+
+        <br><br><br><br>
+
+        <label for="cars">Choose a car</label>
+
+        <select name="cars" id="cars" required>
+            <optgroup label="Swedish cars">
+                <option value="volvo">Volvo</option>
+                <option value="saab">Saab</option>
+            </optgroup>
+            <optgroup label="German cars">
+                <option value="mercedes">Mercedes</option>
+                <option value="audi">Audi</option>
+            </optgroup>
+
+        </select>
+
+        </fieldset>
+
+        <br><br>
+
+        <input type="submit" value="Submit">
+
+    </form>
+</body>
+
+</html>
