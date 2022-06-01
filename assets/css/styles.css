@@ -107,8 +107,24 @@ transform: rotateY(180deg);
 
 /*******ANIMATIONS*******/
 
-
-
+/********FOOTER*******/
+footer{
+  padding: 3%;
+  margin:0;
+  text-align:center;
+  color:white;
+}
+footer > div:first-of-type{
+  padding:0;
+  margin:0;
+  display:block;
+}
+footer small.disclaimer{
+  margin:0;
+  padding:0;
+  display: block;
+}
+/*******BREAKPOINTS*******/
 /*Styles initially set for XXL Displays*/
 @media only screen and (min-width: 1200px) and (max-width: 1399px){  /*XLScreens (large/hi-def monitors and laptops)*/
   .flip-card{
