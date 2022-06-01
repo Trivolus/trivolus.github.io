@@ -10,11 +10,6 @@ body{
 
 /*HEADER*/
 
-/*FOOTER*/
-footer small.disclaimer{
-  font-size: .85rem;
-}
-
 /*ICONS*/
 #home i{
   padding-left:4%;
@@ -118,11 +113,17 @@ footer > div:first-of-type{
   padding:0;
   margin:0;
   display:block;
+  color:white;
+  text-align:center
 }
 footer small.disclaimer{
   margin:0;
   padding:0;
   display: block;
+  font-size: .85rem;
+  color:white;
+  text-align:center;
+
 }
 /*******BREAKPOINTS*******/
 /*Styles initially set for XXL Displays*/
