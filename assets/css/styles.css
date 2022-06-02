@@ -26,6 +26,13 @@ header i:last-of-type{
 }
 
 /*******HOME*******/
+#home .card-grid{
+  background-image: url(assets/images/code-focused-opace.jpg);
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+  padding:0;
+}
 #home > .img-fluid{
   background-image: url(../images/code-controller.png);
   background-repeat: no-repeat;
@@ -55,7 +62,8 @@ header i:last-of-type{
   list-style-type: none;
   text-decoration: none;
 }
-#home > a:hover{
+#home .dropdown-item:hover,
+#home .resume-link:hover{
   font-style:italic;
 }
 #home ul li a,
@@ -63,14 +71,13 @@ header i:last-of-type{
   display:block;
   padding-left: 4px;
 }
-#home li:hover{
-  font-style: italic;
-}
 /* Flip-card start*/
 .flip-card {
   background-color: transparent;
   width: 20vw;
   height: 34vh;
+  padding:0;
+  margin:1%;
   border: 1px solid #f1f1f1;
   perspective: 1000px;
 }
@@ -96,6 +103,9 @@ header i:last-of-type{
 }
 .flip-card-back {
 transform: rotateY(180deg);
+}
+div.flip-card-back a.resume-link{
+  padding-right:3%;
 }
 /*Flip-card end*/
 
@@ -123,10 +133,9 @@ footer small.disclaimer{
   font-size: .85rem;
   color:white;
   text-align:center;
-
 }
 /*******BREAKPOINTS*******/
-/*Styles initially set for XXL Displays*/
+/*Flip-card styles initially set for XXL Displays*/
 @media only screen and (min-width: 1200px) and (max-width: 1399px){  /*XLScreens (large/hi-def monitors and laptops)*/
   .flip-card{
     width: 26vw;
@@ -159,4 +168,10 @@ footer small.disclaimer{
     width: 70vw;
     height: 40vh;
   }
+}
+/*MOBILE HEADER*/
+@media screen and (max-width: 800px){
+.hero-wrapper h2{
+  display: none;
+}
 }

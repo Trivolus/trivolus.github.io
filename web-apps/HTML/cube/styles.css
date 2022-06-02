@@ -18,7 +18,7 @@
   position: absolute;
   transform-style: preserve-3d;
   animation-name: cube-spin;
-  animation-duration: 15s;
+  animation-duration: 10s;
   animation-iteration-count: infinite;
 }
 .side {
