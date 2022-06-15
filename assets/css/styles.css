@@ -47,12 +47,7 @@ header i:last-of-type{
   padding:0;
   font-size:1em;
   color: #011627;
-}
-.resume-iframe,
-.tech-iframe,
-.project-iframe,
-.skills-iframe{
-  /* background-color:#b6a39e; */
+  font-size: 2vw;
 }
 #home .dropdown-menu,
 #home a,
@@ -61,6 +56,7 @@ header i:last-of-type{
   color: #011627;
   list-style-type: none;
   text-decoration: none;
+  font-size: 1.2vw;
 }
 #home .dropdown-item:hover,
 #home .resume-link:hover{
@@ -73,8 +69,8 @@ header i:last-of-type{
 /* Flip-card start*/
 .flip-card {
   background-color: transparent;
-  /* width: 300px;
-  height: 250px; */
+  width: 20vw;
+  height: 40vh;
   padding:0;
   margin:1%;
   /* border: 1px solid #f1f1f1; */
@@ -109,17 +105,15 @@ div.flip-card-back a.resume-link{
   padding-right:3%;
 }
 /*Flip-card end*/
+
 /*******ABOUT PAGE*******/
-#about .col-6 iframe{
+#about{
+  font-size: 2vw;
+}/*ensure all text on site is responsive*/
+#about-section2 .col-6 iframe{
   width:100%;
   height:100%;
 }
-/* @media screen and (max-width: 700px){
-  #about .col-6 iframe{
-    width: 100%;
-    height: auto;
-  }
-} */
 
 /*******ANIMATIONS*******/
 
@@ -148,8 +142,50 @@ footer small.disclaimer{
 /*******BREAKPOINTS*******/
 
 /*MOBILE HEADER*/
-@media screen and (max-width: 800px){
-.hero-wrapper h2{
-  display: none;
+@media screen and (min-width: 771px) and (max-width: 990px){
+  .hero-wrapper h2{
+    display: none;
+  }
+  .flip-card{
+    width:40vw;
+  }
+  #home .dropdown-menu,
+  #home a,
+  #home i,
+  #home .dropdown-toggle{
+    font-size: 2.5vw;
+  }
 }
+@media screen and (min-width: 600px) and (max-width: 770px){
+  .flip-card{
+    width:70vw;
+  }
+  #home .dropdown-menu,
+  #home a,
+  #home i,
+  #home .dropdown-toggle{
+    font-size: 3vw;
+  }
+}
+@media screen and (min-width: 350px) and (max-width:599px){
+  .flip-card{
+    width:70vw;
+  }
+  #home .dropdown-menu,
+  #home a,
+  #home i,
+  #home .dropdown-toggle{
+    font-size: 4vw;
+  }
+}
+@media screen and (max-width:349px){
+  .flip-card{
+    width:70vw;
+  }
+  #home .dropdown-menu,
+  #home a,
+  #home i,
+  #home .dropdown-toggle{
+    font-size: 4.8vw;
+  }
 }
