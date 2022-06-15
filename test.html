@@ -22,12 +22,14 @@
           <a class="dropdown-item" href="#">Link 3</a>
         </div>
       </div>
-      <div id="card" onclick="myFunction"> 
-        <div> 
-          Front content
+
+      <style>.card-component{position:absolute; text-align: center;backface-visibility: hidden;}.card{ transform-style: preserve-3d; transition: transform 2s;}</style>
+      <div class="flip-card bg-light"> 
+        <div class="card" width="100%" height="auto"> 
+          <p class="card-body card-component">Front content</p>
         </div> 
-        <div>
-          Back content
+        <div class="card" width="100%" height="auto">
+          <p class="card-body card-component">Back content</p>
         </div> 
       </div>
 <script> function myFunction() {
