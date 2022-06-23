@@ -11,26 +11,31 @@
         <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.0/jquery.js" integrity="sha512-n/4gHW3atM3QqRcbCn6ewmpxcLAHGaDjpEBu4xZd47N0W2oQ+6q7oc3PXstrJYXcbNU1OHdQ1T7pAP+gi5Yu8g==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>    </head>
 
 <body>
-    <header>
-        <div>
-            <div class="bg-primary text-white text-center d-block h1 p-5 m-0">Cody Simpson Portfolio</div>
-        </div>
+    <header style="position: sticky;" class="row m-0 p-0">
+        <div class="bg-primary text-white text-start text-sm-center h1 p-3 p-lg-5 m-0 col-10 col-sm-12 m-0 p-0">Cody Simpson Portfolio</div>
+<!--TOP NAV-->
+        <nav class="topnav navbar navbar-expand-sm bg-dark navbar-dark h4 col-2 col-sm-12 m-0">
 
-        <nav class="navbar navbar-expand-sm bg-dark navbar-dark h4 mb-0">
-            <div class="container-fluid">
-                <ul class="nav navbar-nav nav-pills">
+            <div class="container-fluid d-none d-sm-flex" id="myLinks">
+
+                <ul class="nav navbar-nav nav-pills d-flex-inline">
                     <li class="nav-item active"><a data-toggle="pill" class="nav-link" href="index.html">Home</a></li>
                     <li class="nav-item" data-toggle="tooltip" data-placement="top" title="This page is coming soon!"><a data-toggle="pill" class="nav-link disabled" href="services.html">Services</a></li>
                     <li class="nav-item"><a data-toggle="pill" class="nav-link" href="about.html">About</a></li>
                     <li class="nav-item"><a data-toggle="pill" class="nav-link" href="contact.html">Contact</a></li>
                 </ul>
 
-                <div>
+                <div class="d-inline">
                     <a target="_blank" href="tel://531-777-6792" aria-label="click to call"><i class="fa-solid fa-phone"></i></a>
                     <a target="_blank" href="mailto:codysimpsonusa@gmail.com?subject=Potential%20Opportunity&body=Hello%20Cody,"><i target="_blank" class="fa-solid fa-envelope" aria-label="click to send email"></i></a>
                     <a target="_blank" href="https://www.linkedin.com/in/cody-simpson" aria-label="click to be directed to my linked in page"><i class="fa-brands fa-linkedin"></i></a>    
                 </div>
+                
             </div>
+<!--MOBILE NAV-->
+            <span class="icon d-sm-none w-100 bg-dark d-flex justify-content-center" onclick="showMobile()">
+                <i class="fa fa-bars" style="transform:scale(1.5);"></i>
+            </span>
         </nav>
     </header>
 
